@@ -1,0 +1,36 @@
+flight 
+  p 
+    small 
+      font-size: 12px
+      font-weight: bold
+    
+    br 
+      display: none // hide the line break between small elements
+      @media (min-width: 768px) 
+        display: block // show the line break on larger screens
+      
+    
+    small:first-child 
+      margin-right: 10px // add some space between the two small elements
+    
+  
+  br 
+    display: none // hide the line break between the p and the text below
+    @media (min-width: 768px) 
+      display: block // show the line break on larger screens
+    
+  
+  &:after 
+    content: ''
+    display: block
+    margin-top: 10px
+    font-size: 16px
+    font-weight: bold
+    color: #333
+    @media (min-width: 768px) 
+      content: ' - '
+      display: inline
+      margin: 0 10px
+    
+  
+

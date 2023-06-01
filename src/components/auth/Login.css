@@ -1,0 +1,60 @@
+
+.center_input {
+  text-align: center;
+}   
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input[type="text"],
+.input input[type="password"],
+.input input[type="time"] {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input input[type="text"]::placeholder,
+.input input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.input input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input input[type="submit"]:hover {
+  background-color: #005580;
+}
+
+
+button {
+  padding: 10px 20px;
+  /* font-size: large; */
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #005580;
+}
+
+
